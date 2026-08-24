@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cloudflare.com">
+<head>
+ <style>
+    .prompt-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 24px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .prompt-input-row {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .prompt-input {
+        flex-grow: 1;
+        border: none;
+        resize: none;
+        padding: 8px 12px;
+        font-size: 16px;
+        font-family: inherit;
+        outline: none;
+        max-height: 200px;
+    }
+
+    .prompt-actions-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 12px 0 12px;
+        margin-top: 8px;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .model-select {
+        padding: 6px 12px;
+        font-size: 14px;
+        font-family: inherit;
+        border: 1px solid #e0e0e0;
+        border-radius: 16px;
+        background-color: #f9f9f9;
+        color: #333;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .model-select:hover {
+        background-color: #f0f0f0;
+    }
+
+    .send-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s;
+    }
+
+    .send-button:hover {
+        background-color: #333;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitAI</title>
+</head>
+<body>
+
+    <h1>Welcome to GitAI.</h1>
+    <p>GitAI is a AI assistant designed for git coding and repositories.</p>
+  div class="prompt-container">
+<div class="prompt-container">
+    <!-- Top row for text input -->
+    <div class="prompt-input-row">
+        <textarea 
+            class="prompt-input" 
+            placeholder="Ask anything..." 
+            rows="2"
+        ></textarea>
+    </div>
+    
+    <!-- Bottom row for model choice and submit button -->
+    <div class="prompt-actions-row">
+        <select class="model-select" aria-label="Choose AI Model">
+            <option value="gpt-4">GPT-4o</option>
+            <option value="claude-3-5">Claude 3.5 Sonnet</option>
+            <option value="gemini-1-5">Gemini 1.5 Pro</option>
+            <option value="llama-3">Llama 3</option>
+          <option value="gemini-2-4">Gemini 2.5</option>
+            <option value="kimi-2-5">Kimi 2.5</option>
+            <option value="auto">Auto 🤖</option>
+            <option value="claude-haiku-3">Claude 3.5 Haiku</option>
+        </select>
+
+        <button class="send-button" aria-label="Send prompt">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </button>
+    </div>
+
+<script src="https://cloudflare.com"></script>
+</div>
+</div>
+</body>
+</html>
