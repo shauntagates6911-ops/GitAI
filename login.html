@@ -1,0 +1,21 @@
+<!-- ==================== LOG IN FORM ==================== -->
+        <div id="loginView" class="auth-view hidden">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Enter your credentials to access your account.</p>
+            
+            <form action="/login-endpoint" method="POST" id="loginForm">
+                <div class="input-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="auth-btn">Log In</button>
+            </form>
+            <p class="toggle-link">Don't have an account? <a href="signup.html" id="toSignup">Sign up</a></p>
+        </div>
+
+    </div>
